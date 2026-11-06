@@ -51,6 +51,8 @@ class ViewController: UIViewController {
         }else{
             // Si ambos campos tienen texto, mostramos un mensaje en la etiqueta.
             mensajeLabel.text = "El suario no ha sido encontrado."
+            //GUARDAR CORREO USUARIO USERDEFAULTS
+            UserDefaults.standard.set(correoTextField.text, forKey: "email")
         }
 
     }
@@ -59,6 +61,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         // Llamamos a la implementación de la clase padre (UIViewController).
         super.viewDidLoad()
+        //LEER USERDEFAULTS
+        print(UserDefaults.standard.string(forKey: "email") ?? "sin corrreo")
     }
 
     // MARK: - Navigation
