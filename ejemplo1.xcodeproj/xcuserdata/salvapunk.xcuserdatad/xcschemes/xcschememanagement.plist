@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ejempolo3 Watch App.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CD44E50F30993C70006D09BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD44E559309A4690006D09BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD44E55E309A4690006D09BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
