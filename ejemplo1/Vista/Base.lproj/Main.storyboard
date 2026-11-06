@@ -112,6 +112,103 @@
             </objects>
             <point key="canvasLocation" x="-1215" y="-604"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ru2-8T-2Op">
+            <objects>
+                <navigationController id="fzJ-XA-M7j" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y5z-51-zli">
+                        <rect key="frame" x="0.0" y="59" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HHQ-Km-ecO" kind="relationship" relationship="rootViewController" id="2K9-uc-BK9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iEk-eY-YXZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2019" y="-1351"/>
+        </scene>
+        <!--Pantalla 1-->
+        <scene sceneID="4mA-LY-fDa">
+            <objects>
+                <viewController id="HHQ-Km-ecO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IJF-oZ-uet">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmn-8m-nmK">
+                                <rect key="frame" x="142" y="409" width="109" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SIGUIENTE"/>
+                                <connections>
+                                    <segue destination="dBp-1P-5vT" kind="show" id="5zg-pH-mCv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="41y-KT-IlS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pantalla 1" id="1Fa-8T-ZUc">
+                        <barButtonItem key="backBarButtonItem" title="Atras" id="z3p-ff-pSC"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JgM-3O-BV9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1001" y="-1372"/>
+        </scene>
+        <!--Pantalla 2-->
+        <scene sceneID="vDv-OC-cge">
+            <objects>
+                <viewController id="dBp-1P-5vT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2E4-yN-Qdi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcP-jy-xIN">
+                                <rect key="frame" x="131" y="409" width="109" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SIGUIENTE"/>
+                                <connections>
+                                    <segue destination="7xN-3X-KYU" kind="show" id="RWX-i5-jgm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VIh-8a-qVI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pantalla 2" id="iTF-9p-Bu2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EU5-7s-Lna" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-144" y="-1357"/>
+        </scene>
+        <!--Pantalla 3-->
+        <scene sceneID="VJr-c3-KNF">
+            <objects>
+                <viewController id="7xN-3X-KYU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qev-0l-XfT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JNN-qO-hZk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pantalla 3" id="eQf-Pt-mEA">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="H3l-vO-lWa">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="rUJ-Yb-Gcb">
+                                <rect key="frame" x="-37" y="-17" width="87" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W7r-fT-E04" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805" y="-1345"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
