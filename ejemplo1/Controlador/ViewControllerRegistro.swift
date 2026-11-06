@@ -59,6 +59,46 @@ class ViewControllerRegistro: UITableViewController {
         // Imprime en la consola de Xcode el mensaje recibido.
         print(mensaje)
         // Do any additional setup after loading the view.
+
+        // Carga y muestra en consola las preguntas guardadas en FlashCard.plist.
+        leerDesdeArchivoPList()
+    }
+
+    // Lee el archivo FlashCard.plist incluido en la app e imprime cada
+    // pregunta con su respuesta. El plist es un arreglo (Array) donde cada
+    // elemento es un diccionario con las llaves "pregunta" y "respuesta".
+    func leerDesdeArchivoPList() {
+
+        // Bundle.main representa el paquete de la app (donde viven los archivos
+        // que agregamos al proyecto). path(forResource:ofType:) busca el archivo
+        // y regresa su ruta, o nil si no existe. "guard" nos permite salir
+        // temprano del método cuando algo no se cumple.
+        guard let ruta = Bundle.main.path(forResource: "FlashCard", ofType: "plist") else {
+            print("Archivo no encontrado")
+            return
+        }
+
+        // NSMutableArray(contentsOfFile:) lee el plist y lo convierte en un
+        // arreglo. Regresa nil si el archivo no tiene el formato esperado
+        // (por ejemplo, si la raíz del plist no es un Array).
+        guard let datos = NSMutableArray(contentsOfFile: ruta) else {
+            return
+        }
+
+        // dump imprime toda la estructura del arreglo; útil para depurar.
+        //dump(datos)
+
+        // Recorremos cada elemento del arreglo.
+        for dic in datos {
+            // Los elementos llegan como "Any", así que hacemos un cast opcional
+            // (as?) a NSDictionary para poder leer sus llaves.
+            if let dic = dic as? NSDictionary{
+                // Si la llave no existe, "??" usa una cadena vacía como valor por defecto.
+                print(dic["pregunta"] ?? "")
+                print(dic["respuesta"] ?? "")
+            }
+        }
+
     }
 
 }

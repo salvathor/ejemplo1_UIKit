@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   FlashCard.plist
-   ejemplo1
-
-   Created by Salvador Lopez on 06/11/26.
-   Copyright (c) 2026 ___ORGANIZATIONNAME___. All rights reserved.
--->
 <plist version="1.0">
-<dict/>
+<array>
+	<dict>
+		<key>pregunta</key>
+		<string>valor de la pregunta</string>
+		<key>respuesta</key>
+		<string>valor de la respuesta</string>
+	</dict>
+	<dict>
+		<key>pregunta</key>
+		<string>valor preguna 2</string>
+		<key>respuesta</key>
+		<string>valor respuesta 2</string>
+	</dict>
+</array>
 </plist>

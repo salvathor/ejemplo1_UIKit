@@ -197,7 +197,7 @@
                     <navigationItem key="navigationItem" title="Pantalla 3" id="eQf-Pt-mEA">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="H3l-vO-lWa">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="rUJ-Yb-Gcb">
-                                <rect key="frame" x="-37" y="-17" width="87" height="35"/>
+                                <rect key="frame" x="298" y="4.6666666666666661" width="75" height="34.666666666666664"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
